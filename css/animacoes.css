@@ -1,0 +1,37 @@
+@keyframes animacao-cano{
+
+    from{
+        right: -80px;
+    }
+    to{
+       right: 100%;
+    }
+
+}
+@keyframes mario-salto{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 188px;
+    }
+
+    50%{
+        bottom: 188px;
+    }
+    60%{
+        bottom: 188px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes animacao-nuvens{
+    from{
+        right: -500px;
+    }
+    to{
+        right: 100%;
+    }
+}

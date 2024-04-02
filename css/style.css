@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(#87CEEB, #E0F6FF);
+    overflow: hidden;
+    color:yellow;
+}
+.comecarJogo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.849);
+    z-index: 1;
+}
+.info-jogo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{margin-top: 110px;font-size: 65px;}
+h3{
+    margin-top: 35px;
+    margin-left: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+button{
+    width: 140px;
+    background: yellow;
+    margin-top: 25px; 
+    font-size: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: black;
+}
+#tempo-final{font-size: 20px; margin-top: 20px;}
+h5{
+    font-variant: small-caps;
+    position: relative;
+    margin-top: 170px;
+    text-align: center;
+    font-size: medium;   
+}
+p{color: #fff; text-align: center; padding: 10px;}
+.statu-Jogo{
+    display: flex;
+    float: right;
+    font-size: 30px;
+    margin: 30px;
+}
+.nuvens{
+    position: absolute;
+    width: 500px;
+    animation: animacao-nuvens 20s infinite linear; 
+}
+.campo{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    /* border-bottom: 15px solid  */
+  
+    margin: 0 auto;
+    overflow: hidden;
+}
+.terra{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+
+}
+.terra div{
+    width: 100%;
+    background-color:rgb(21, 168, 21);
+}
+.cano{
+    position: absolute;
+    bottom: 10px;
+    width: 80px;
+    display: none;
+    animation: animacao-cano 1.5s infinite linear;  
+}
+
+.mario{
+    position: absolute;
+    bottom: 15px;
+    width: 150px;
+}
+.saltar{
+    animation: mario-salto 500ms ease-out;
+}
